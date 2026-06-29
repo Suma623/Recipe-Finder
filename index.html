@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+<section class="hero">
+
+    <h1>🍽️ Discover Delicious Recipes</h1>
+
+    <p>Search thousands of tasty meals from around the world.</p>
+
+</section>
+    
+
+
+
+    <!-- Search Section -->
+
+    <section class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter meal name (Example: Chicken, Pasta, Pizza)">
+
+        <button onclick="searchMeal()">
+            Search
+        </button>
+
+    </section>
+
+<div id="resultCount" class="result-count"></div>
+
+<section id="recipeContainer" class="recipe-container">
+
+</section>
+
+    <!-- Loading -->
+
+    <div id="loading" class="loading">
+
+        Loading Recipes...😋
+
+    </div>
+
+
+
+    <!-- Error Message -->
+
+    <div id="error" class="error">
+
+    </div>
+
+
+
+    <!-- Recipe Cards -->
+
+    <section id="recipeContainer" class="recipe-container">
+
+    </section>
+
+
+
+    <!-- Recipe Modal -->
+
+    <div id="recipeModal" class="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">
+
+                &times;
+
+            </span>
+
+            <img id="modalImage">
+
+            <h2 id="modalTitle"></h2>
+
+            <p>
+                <strong>Category :</strong>
+                <span id="modalCategory"></span>
+            </p>
+
+            <p>
+                <strong>Cuisine :</strong>
+                <span id="modalArea"></span>
+            </p>
+
+            <h3>Ingredients</h3>
+
+            <ul id="ingredientsList">
+
+            </ul>
+
+            <h3>Instructions</h3>
+
+            <p id="modalInstructions"></p>
+
+        </div>
+
+    </div>
+
+<footer>
+
+Made with ❤️ using TheMealDB API
+
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
