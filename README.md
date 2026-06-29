@@ -64,15 +64,3 @@ Recipe-Finder/
 
 ---
 
-## 📸 Screenshots
-
-(Add screenshots of your project here)
-
----
-
-## 👩‍💻 Developed By
-
-**Sumanaswi**
-
-B.Tech Student
-SRM University–AP
